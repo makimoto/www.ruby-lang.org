@@ -6,7 +6,27 @@ lang: ja
 
 ここでは、Rubyインタプリタの代表的な入手方法を説明します。
 
-## Rubyのソースコード
+現在の安定版は {{ site.downloads.stable.version }}です。
+[Ruby’sライセンス]({{ site.license.url }})を必ずお読み下さい。
+
+### Rubyのインストール方法
+
+メジャーなプラットフォームへのRubyのインストール方法はいくつかツールがあります。
+
+- Linux/UNIX マシンでは、そのシステムのパッケージ管理ツールや、rbenv、RVMなどのサードパーティのパッケージ管理ツールが使えます。
+- OS Xマシンでは、rbenv、RVMなどのサードパーティのパッケージ管理ツールが使えます。
+- Windowsマシンでは、RubyInstallerやpikといったツールが使えます。
+
+各システム及びサードパーティのパッケージ管理システムについての概要は、[インストール方法](/ja/installation) ページを参照して下さい。
+
+もちろん、メジャーなプラットフォームでもソースからのRubyをインストールすることも可能です。
+
+### ソースコードからRubyをコンパイルする
+
+ソースコードからのインストールは、利用したいプラットフォームや環境に合った設定を使うことができる、いいやり方です。
+また、利用したいプラットフォーム向けのパッケージが存在しない場合にも使えるいいやり方でもあります。
+
+もしコンパイル時に問題がある場合、[インストール方法](/ja/installation) ページで解説しているサードパーティツールの利用が助けになるかもしれません。
 
 Rubyの各バージョンのソースコードは、以下から入手できます。
 
@@ -18,7 +38,7 @@ Rubyの各バージョンのソースコードは、以下から入手できま�
 
 最新のソースを Subversion と Git のリポジトリから入手する方法については、[リポジトリガイド](/ja/documentation/repository-guide)を参照してください。
 
-## Windows版Rubyバイナリ
+### Windows版Rubyバイナリ
 
 Windows向けのバイナリが有志により配布されています。
 
@@ -29,11 +49,11 @@ Windows向けのバイナリが有志により配布されています。
 * [RailsInstaller][railsinstaller] (英語)
   RubyInstaller に Rails の開発に必要なものを加えたもの。
 
-## ミラーサイト
+### ミラーサイト
 
 Rubyのソースコードや、それを含めた当サイトの内容が、有志によりミラーされています。
 
-### HTTPミラーサイト
+#### HTTPミラーサイト
 
 * [CDN][mirror-http-cdn] (fastly.com)
 * [日本 1][mirror-https-jp] (マスターサイト) - HTTPS
@@ -59,7 +79,7 @@ Rubyのソースコードや、それを含めた当サイトの内容が、有�
 * [台湾 2][mirror-http-tw2] (ftp.cs.pu.edu.tw)
 * [中国][mirror-http-cn] (ruby.taobao.org)
 
-### FTPミラーサイト
+#### FTPミラーサイト
 
 * [日本 1][mirror-ftp-jp1] (マスターサイト)
 * 日本 2 (RingServer)
@@ -84,7 +104,7 @@ Rubyのソースコードや、それを含めた当サイトの内容が、有�
 * [台湾 2][mirror-ftp-tw2] (ftp.cs.pu.edu.tw)
 * [カナダ][mirror-ftp-ca] (mirror.cs.mun.ca)
 
-### Rsyncミラーサイト
+#### Rsyncミラーサイト
 
 * rsync://rsync.mirrorservice.org/ftp.ruby-lang.org/pub/ruby/ (イギリス)
 * rsync://sunsite.dk/ftp/mirrors/ruby/ (デンマーク)
